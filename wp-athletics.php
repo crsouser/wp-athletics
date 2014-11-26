@@ -239,18 +239,18 @@ if(!class_exists('WP_Athletics')) {
 			$theme = strtolower( get_option( 'wp-athletics_theme', 'default') );
 
 			// scripts
-			wp_register_script( 'wpa-functions', plugin_dir_url( __FILE__ ) . '/resources/scripts/wpa-functions.js' );
-			wp_register_script( 'wpa-custom', plugin_dir_url( __FILE__ ) . '/resources/scripts/wpa-custom.js' );
-			wp_register_script( 'wpa-ajax', plugin_dir_url( __FILE__ ) . '/resources/scripts/wpa-ajax.js' );
-			wp_register_script( 'wpa-my-results', plugin_dir_url( __FILE__ ) . '/resources/scripts/wpa-my-results.js' );
-			wp_register_script( 'wpa-stats', plugin_dir_url( __FILE__ ) . '/resources/scripts/wpa-stats.js' );
-			wp_register_script( 'wpa-records', plugin_dir_url( __FILE__ ) . '/resources/scripts/wpa-records.js' );
-			wp_register_script( 'wpa-recent-results', plugin_dir_url( __FILE__ ) . '/resources/scripts/wpa-recent-results.js' );
-			wp_register_script( 'datatables', plugin_dir_url( __FILE__ ) . '/resources/scripts/jquery.dataTables.min.js', array('jquery'), '1.0', true );
+			wp_register_script( 'wpa-functions', WPA_PLUGIN_URL . 'resources/scripts/wpa-functions.js' );
+			wp_register_script( 'wpa-custom', WPA_PLUGIN_URL . 'resources/scripts/wpa-custom.js' );
+			wp_register_script( 'wpa-ajax', WPA_PLUGIN_URL . 'resources/scripts/wpa-ajax.js' );
+			wp_register_script( 'wpa-my-results', WPA_PLUGIN_URL . 'resources/scripts/wpa-my-results.js' );
+			wp_register_script( 'wpa-stats', WPA_PLUGIN_URL . 'resources/scripts/wpa-stats.js' );
+			wp_register_script( 'wpa-records', WPA_PLUGIN_URL . 'resources/scripts/wpa-records.js' );
+			wp_register_script( 'wpa-recent-results', WPA_PLUGIN_URL . 'resources/scripts/wpa-recent-results.js' );
+			wp_register_script( 'datatables', WPA_PLUGIN_URL . 'resources/scripts/jquery.dataTables.min.js', array('jquery'), '1.0', true );
 
 			// styles
-			wp_register_style( 'datatables', plugin_dir_url( __FILE__ ) . '/resources/css/jquery.dataTables.css' );
-			wp_register_style( 'wpa_style', plugin_dir_url( __FILE__ ) . '/resources/css/wpa-style.css' );
+			wp_register_style( 'datatables', WPA_PLUGIN_URL . 'resources/css/jquery.dataTables.css' );
+			wp_register_style( 'wpa_style', WPA_PLUGIN_URL . 'resources/css/wpa-style.css' );
 		}
 
 		/**
