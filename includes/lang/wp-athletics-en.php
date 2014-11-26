@@ -154,7 +154,7 @@ $common_lang = array(
 	'embedded_event_results_female_records_link' => 'View Female Records',
 	'embedded_event_results_error_no_id' => '[WPA Error: ID for the event was not supplied]',
 	'time_invalid_text' => 'Invalid Time',
-	'time_no_value_text' => 'Unavavilable',
+	'time_no_value_text' => 'Unavailable',
 	'time_days_label' => 'days',
 
 	// stats
